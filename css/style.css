@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  white-space: nowrap;
+}
+
+.navbar {
+  text-align: right;
+  height: 80px;
+  color: lightgray;
+  background-color: #330099;
+  border: none;
+}
+
+#brand {
+  text-align: left;
+  padding-top: 0;
+}
+
+#hamburger-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 30px 0 0;
+
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+#hamburger-wrapper.open {
+  right: 200px;
+}
+
+#hamburger-button {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  width: 43px;
+}
+
+#hamburger-button > span {
+  margin-bottom: 6px;
+  height: 4px;
+  width: 43px;
+  background-color: lightgray;
+  display: block;
+
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+#hamburger-button.open span:nth-child(1) {
+  -webkit-transform: translateY(14px) rotate(45deg);
+     -moz-transform: translateY(14px) rotate(45deg);
+      -ms-transform: translateY(14px) rotate(45deg);
+       -o-transform: translateY(14px) rotate(45deg);
+          transform: translateY(14px) rotate(45deg);
+}
+
+#hamburger-button.open span:nth-child(2) {
+  -webkit-transform: rotateY(90deg);
+     -moz-transform: rotateY(90deg);
+      -ms-transform: rotateY(90deg);
+       -o-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+#hamburger-button.open span:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+     -moz-transform: translateY(-6px) rotate(-45deg);
+      -ms-transform: translateY(-6px) rotate(-45deg);
+       -o-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
+}
+
+#menu-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -200px;
+  width: 200px;
+  background: darkorange;
+  z-index: 10;
+
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+#menu-wrapper.open {
+  right: 0px;
+}
+
+ul#menu {
+  list-style-type: none;
+  padding: 0 0 0 0;
+}
+
+ul#menu li {
+  border-bottom: 1px solid #777;
+}
+
+ul#menu > li > a {
+  display: block;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+ul#menu > li > a:hover {
+  color: white;
+  background: orange;
+}
+
+body {
+  padding-top: 50px;
+  background: linen;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.container-fluid {
+  padding: 40px;
+}
+
+.padded {
+  padding: 20px;
+}
+
+/*Videowrapper from: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php*/
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
