@@ -24,7 +24,7 @@ li {
 .navbar {
   text-align: right;
   height: 80px;
-  color: lightgray;
+  color: linen;
   background-color: #330099;
   border: none;
 }
@@ -64,7 +64,7 @@ li {
   margin-bottom: 6px;
   height: 4px;
   width: 43px;
-  background-color: lightgray;
+  background-color: linen;
   display: block;
 
   -webkit-transition: all 0.5s ease;
@@ -104,7 +104,7 @@ li {
   bottom: 0;
   right: -200px;
   width: 200px;
-  background: darkorange;
+  background: #99ccff;
   z-index: 10;
 
   -webkit-transition: all 0.5s ease;
@@ -136,7 +136,7 @@ ul#menu > li > a {
 
 ul#menu > li > a:hover {
   color: white;
-  background: orange;
+  background: #ccccff;
 }
 
 body {
